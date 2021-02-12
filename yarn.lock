@@ -4614,7 +4614,9 @@ commander@^4.1.1:
 
 "common-components@link:tests/dummy/lib/common-components":
   version "0.0.0"
-  uid ""
+  dependencies:
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 common-tags@^1.4.0, common-tags@^1.8.0:
   version "1.8.0"
@@ -5217,7 +5219,9 @@ duplexify@^3.4.2, duplexify@^3.6.0:
 
 "eager-blog@link:./tests/dummy/lib/eager-blog":
   version "0.0.0"
-  uid ""
+  dependencies:
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
@@ -5317,11 +5321,17 @@ ember-auto-import@^1.5.3:
 
 "ember-blog@link:./tests/dummy/lib/ember-blog":
   version "0.0.0"
-  uid ""
+  dependencies:
+    common-components "link:tests/dummy/lib/common-components"
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 "ember-chat@link:./tests/dummy/lib/ember-chat":
   version "0.0.0"
-  uid ""
+  dependencies:
+    common-components "link:tests/dummy/lib/common-components"
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 ember-cli-addon-tests@^0.11.1:
   version "0.11.1"
@@ -8825,9 +8835,9 @@ lodash.defaults@~2.3.0:
     lodash.keys "~2.3.0"
 
 lodash.defaultsdeep@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.0.tgz#bec1024f85b1bd96cbea405b23c14ad6443a6f81"
-  integrity sha1-vsECT4WxvZbL6kBbI8FK1kQ6b4E=
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.1.tgz#512e9bd721d272d94e3d3a63653fa17516741ca6"
+  integrity sha512-3j8wdDzYuWO3lM3Reg03MuQR957t287Rpcxp1njpEa8oDrikb+FwGdW3n+FELh/A6qib6yPit0j/pv9G/yeAqA==
 
 lodash.escape@~2.3.0:
   version "2.3.0"
