@@ -4614,7 +4614,9 @@ commander@^4.1.1:
 
 "common-components@link:tests/dummy/lib/common-components":
   version "0.0.0"
-  uid ""
+  dependencies:
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 common-tags@^1.4.0, common-tags@^1.8.0:
   version "1.8.0"
@@ -5217,7 +5219,9 @@ duplexify@^3.4.2, duplexify@^3.6.0:
 
 "eager-blog@link:./tests/dummy/lib/eager-blog":
   version "0.0.0"
-  uid ""
+  dependencies:
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
@@ -5317,11 +5321,17 @@ ember-auto-import@^1.5.3:
 
 "ember-blog@link:./tests/dummy/lib/ember-blog":
   version "0.0.0"
-  uid ""
+  dependencies:
+    common-components "link:tests/dummy/lib/common-components"
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 "ember-chat@link:./tests/dummy/lib/ember-chat":
   version "0.0.0"
-  uid ""
+  dependencies:
+    common-components "link:tests/dummy/lib/common-components"
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 ember-cli-addon-tests@^0.11.1:
   version "0.11.1"
@@ -13025,9 +13035,9 @@ xtend@^4.0.0, xtend@~4.0.0, xtend@~4.0.1:
   integrity sha1-pcbVMr5lbiPbgg77lDofBJmNY68=
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-  integrity sha1-bRX7qITAhnnA136I53WegR4H+kE=
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
+  integrity sha512-uGZHXkHnhF0XeeAPgnKfPv1bgKAYyVvmNL1xlKsPYZPaIHxGti2hHqvOCQv71XMsLxu1QjergkqogUnms5D3YQ==
 
 "y18n@^3.2.1 || ^4.0.0", y18n@^4.0.0:
   version "4.0.0"
