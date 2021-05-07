@@ -4614,7 +4614,9 @@ commander@^4.1.1:
 
 "common-components@link:tests/dummy/lib/common-components":
   version "0.0.0"
-  uid ""
+  dependencies:
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 common-tags@^1.4.0, common-tags@^1.8.0:
   version "1.8.0"
@@ -5217,7 +5219,9 @@ duplexify@^3.4.2, duplexify@^3.6.0:
 
 "eager-blog@link:./tests/dummy/lib/eager-blog":
   version "0.0.0"
-  uid ""
+  dependencies:
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
@@ -5317,11 +5321,17 @@ ember-auto-import@^1.5.3:
 
 "ember-blog@link:./tests/dummy/lib/ember-blog":
   version "0.0.0"
-  uid ""
+  dependencies:
+    common-components "link:tests/dummy/lib/common-components"
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 "ember-chat@link:./tests/dummy/lib/ember-chat":
   version "0.0.0"
-  uid ""
+  dependencies:
+    common-components "link:tests/dummy/lib/common-components"
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 ember-cli-addon-tests@^0.11.1:
   version "0.11.1"
@@ -12474,9 +12484,9 @@ underscore.string@^3.2.2, underscore.string@~3.3.4:
     util-deprecate "^1.0.2"
 
 underscore@>=1.8.3:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.9.1.tgz#06dce34a0e68a7babc29b365b8e74b8925203961"
-  integrity sha512-5/4etnCkd9c8gwgowi5/om/mYO5ajCaOgdzj/oW+0eQV9WxKBDZw5+ycmKmeaTXjInS/W0BzpGLo2xR2aBwZdg==
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.13.1.tgz#0c1c6bd2df54b6b69f2314066d65b6cde6fcf9d1"
+  integrity sha512-hzSoAVtJF+3ZtiFX0VgfFPHEDRm7Y/QPjGyNo4TVdnDTdft3tr8hEkD25a1jC+TjTuE7tkHGKkhwCgs9dgBB2g==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
